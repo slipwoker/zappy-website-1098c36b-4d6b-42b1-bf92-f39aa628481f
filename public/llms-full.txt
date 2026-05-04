@@ -2,13 +2,13 @@
 
 Barry the Italian is a travel and tourism business specializing in organizing vacations for tourists visiting Italy. The brand has a warm, Italian-inspired identity with a personal touch, suggesting an experienced guide or organizer who brings the authentic Italian experience to travelers. The name 'Barry the Italian' implies a friendly, approachable personality with deep connections to Italian culture and destinations.
 
-Source: https://example.com
+Source: https://barihaitalki.zappy5.app
 
 ---
 
 ## גלו את איטליה האמיתית עם חופשה באיטליה הכל כלול — בארי האיטלקי
 
-URL: https://example.com
+URL: https://barihaitalki.zappy5.app
 Description: חולמים על איטליה? בארי האיטלקי מעצב עבורכם חופשה באיטליה הכל כלול עם אווירה אותנטית, מקומות קסומים וחוויות בלתי נשכחות. הזמינו עכשיו!
 
 גלו את איטליה האמיתית עם חופשה באיטליה הכל כלול — בארי האיטלקי
@@ -754,7 +754,7 @@ Description: חולמים על איטליה? בארי האיטלקי מעצב ע
 
 ## מדיניות פרטיות
 
-URL: https://example.com/privacy
+URL: https://barihaitalki.zappy5.app/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -939,7 +939,7 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 ## הצהרת נגישות
 
-URL: https://example.com/accessibility
+URL: https://barihaitalki.zappy5.app/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1133,7 +1133,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 ## תנאי שימוש
 
-URL: https://example.com/terms
+URL: https://barihaitalki.zappy5.app/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
