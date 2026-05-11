@@ -285,31 +285,53 @@
         .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; min-width: 0 !important; padding: 0 !important; line-height: inherit !important; }
         .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
         .nav-menu li:has(.sub-menu) > a [class*="chevron"], .nav-menu li:has(.sub-menu) > a [class*="arrow"], .nav-menu li:has(.sub-menu) > a .fa-chevron-down, .nav-menu li:has(.sub-menu) > a .fa-angle-down, nav li:has(.sub-menu) > a [class*="chevron"], nav li:has(.sub-menu) > a [class*="arrow"], #navMenu li:has(.sub-menu) > a [class*="chevron"], #navMenu li:has(.sub-menu) > a [class*="arrow"] { display: none !important; visibility: hidden !important; }
-        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: auto !important; background: transparent !important; border: none !important; cursor: pointer !important; color: var(--text-dark) !important; position: static !important; flex-shrink: 0 !important; align-self: stretch !important; z-index: 2 !important; padding: 0 !important; margin: 0 !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: auto !important; background: transparent !important; border: none !important; cursor: pointer !important; color: var(--text-light) !important; position: static !important; flex-shrink: 0 !important; align-self: stretch !important; z-index: 2 !important; padding: 0 !important; margin: 0 !important; }
         .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
         .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
-        .sub-menu a { padding: 10px 0 !important; display: block !important; color: var(--text-dark) !important; white-space: normal !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; color: var(--text-light) !important; white-space: normal !important; }
         .sub-menu .zappy-nav-child > a { padding-left: 28px !important; font-size: 0.9em !important; opacity: 0.85 !important; }
         [dir="rtl"] .sub-menu .zappy-nav-child > a, html[lang="he"] .sub-menu .zappy-nav-child > a, html[lang="ar"] .sub-menu .zappy-nav-child > a { padding-left: 0 !important; padding-right: 28px !important; }
         .sub-menu .zappy-nav-parent > a { font-weight: 600 !important; }
         .nav-menu.active, #navMenu.active { max-width: 100vw !important; overflow-x: hidden !important; box-sizing: border-box !important; }
-        .navbar .sub-menu li a, nav.navbar .sub-menu li a, .zappy-products-dropdown .sub-menu a { color: var(--text-dark) !important; }
+        .navbar .sub-menu li a, nav.navbar .sub-menu li a, .zappy-products-dropdown .sub-menu a { color: var(--text-light) !important; }
       }
       @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
     </style>
 
     <style id="zappy-widget-visibility">
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
       @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
       @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
       @media (max-width: 768px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
         ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
+        }
       }
       @media (min-width: 769px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
         ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
+        }
       }
     </style>
 </head>
@@ -745,10 +767,10 @@
 </script>
   
   <main>
-    <section id="hero" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim">
+    <section id="hero" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" style="min-height: 774.286px !important;">
   <!-- Background Image Layer -->
   <div class="index-hero-bg">
-    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Breathtaking golden hour panorama of the Amalfi Coast, Italy — dramatic cliffside villages cascading to a turquoise sea, warm amber sunlight bathing terracotta rooftops, lush Mediterranean vegetation, a stone promenade in the foreground, cinematic wide-angle travel photography, premium magazine quality, rich saturated colors with a warm golden tone, no people in foreground" width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="חוף אמלפי באיטליה בשעת הזהב — נוף עוצר נשימה של כפרים על צוקים מעל הים הכחול">
+    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Breathtaking golden hour panorama of the Amalfi Coast, Italy — dramatic cliffside villages cascading to a turquoise sea, warm amber sunlight bathing terracotta rooftops, lush Mediterranean vegetation, a stone promenade in the foreground, cinematic wide-angle travel photography, premium magazine quality, rich saturated colors with a warm golden tone, no people in foreground" width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="חוף אמלפי באיטליה בשעת הזהב — נוף עוצר נשימה של כפרים על צוקים מעל הים הכחול" data-hero-background="true" data-element-type="image" data-element-id="img-1778507634151-gk7yof1e0">
   </div>
 
   <!-- Scrim Overlay -->
@@ -793,8 +815,8 @@
       <h3 class="index-hero-subtitle" style="margin-bottom: 0;">ארגון אישי, אותנטי ומלא תשוקה לאיטליה.<br>חוויות מותאמות לכם, מקומות שרק מקומיים מכירים,<br>ולידכם מישהו שאיטליה היא ביתו השני.</h3>
     </div>
     <div class="index-hero-ctas">
-      <a href="#contact" class="index-hero-btn-primary">בואו נתכנן את החופשה שלכם</a>
-      <a href="#experience" class="index-hero-btn-secondary">גלו את החוויה האיטלקית</a>
+      <a href="#contact" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1778507634148-0pxyp1279" data-native-element="true">בואו נתכנן את החופשה שלכם</a>
+      <a href="#experience" class="index-hero-btn-secondary" data-element-type="button" data-element-id="btn-1778507634148-j0y840j16" data-native-element="true">גלו את החוויה האיטלקית</a>
     </div>
   </div>
 
@@ -1360,7 +1382,7 @@
           </div>
         </div>
       </article><article class="its-card" style="box-sizing: border-box; background-color: rgb(245, 237, 216) !important; padding: 32px !important; grid-area: auto !important;" data-grid-item-index="4">
-        <div class="its-card-map-coord" aria-hidden="true" >טקסט כאן</div>
+        <div class="its-card-map-coord" aria-hidden="true" style="cursor: text;">טקסט כאן</div>
         <div class="its-stars" aria-label="5 כוכבים">
           <svg viewBox="0 0 80 14" xmlns="http://www.w3.org/2000/svg" width="80" height="14" aria-hidden="true">
             <path d="M7,1l1.5,4h4.2l-3.4,2.5 1.3,4L7,9l-3.6,2.5 1.3-4L1.3,5h4.2z" fill="#C8A951"></path>
@@ -1370,14 +1392,14 @@
             <path d="M71,1l1.5,4h4.2l-3.4,2.5 1.3,4L71,9l-3.6,2.5 1.3-4L65.3,5h4.2z" fill="#C8A951"></path>
           </svg>
         </div>
-        <div class="its-quote-mark" aria-hidden="true" >טקסט כאן</div>
-        <h3 class="its-card-title" >כותרת משנה</h3>
-        <p class="its-card-quote" >טקסט כאן</p>
+        <div class="its-quote-mark" aria-hidden="true" style="cursor: text;">טקסט כאן</div>
+        <h3 class="its-card-title" style="cursor: text;">כותרת משנה</h3>
+        <p class="its-card-quote" style="cursor: text;">טקסט כאן</p>
         <div class="its-card-footer">
-          <div class="its-avatar" aria-hidden="true" >טקסט כאן</div>
-          <div class="its-card-meta" >
-            <span class="its-card-name" >טקסט כאן</span>
-            <span class="its-card-trip" >טקסט כאן</span>
+          <div class="its-avatar" aria-hidden="true" style="cursor: text;">טקסט כאן</div>
+          <div class="its-card-meta" style="cursor: text;">
+            <span class="its-card-name" style="cursor: text;">טקסט כאן</span>
+            <span class="its-card-trip" style="cursor: text;">טקסט כאן</span>
           </div>
         </div>
       </article>
